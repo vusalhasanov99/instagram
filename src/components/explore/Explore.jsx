@@ -5,17 +5,18 @@ function Explore() {
     const [exploreDatas, setExploreDatas] = useState([])
     useEffect(() => {
         axios
-            .get("https://gist.githubusercontent.com/poudyalanil/ca84582cbeb4fc123a13290a586da925/raw/14a27bd0bcd0cd323b35ad79cf3b493dddf6216b/videos.json")
+            .get("https://api.unsplash.com/search/photos?page=56&query=programming&client_id=XcCrW9fp-plKCO8U2keqOIt1mcZat_rCvvQwysHohsU")
             .then(res => setExploreDatas(res.data))
     }, [])
     console.log(exploreDatas);
     return (
         <div style={{columns:"3",margin:"auto"}}>
-            {exploreDatas.map(item => (
-                <div className="video">
-                    <video width="320" height="240" controls>
+            {exploreDatas.results?.map(item => (
+                <div className="img">
+                    <img style={{width:"100%"}} src={item.urls.regular} alt="" />
+                    {/* <video width="320" height="240" controls>
                         <source src={item.videoUrl }  type="video/mp4" />
-                    </video>
+                    </video> */}
                 </div>
             ))}
         </div>

@@ -2,10 +2,10 @@ import React from 'react'
 import './Popup.css'
 import { IoMdClose } from 'react-icons/io'
 
-function Popup({setPopupShow}) {
+function Popup({ setPopupShow }) {
     return (
         <>
-            <div className='popup' onClick={()=>setPopupShow(false)}>
+            <div className='popup' onClick={() => setPopupShow(false)}>
                 <div className="close">
                     <IoMdClose />
                 </div>
@@ -18,6 +18,7 @@ function Popup({setPopupShow}) {
                     </div>
                     <p>Drag photos and videos here</p>
                     <button>select from computer</button>
+                    <input type="file" />
                 </div>
             </div>
         </>

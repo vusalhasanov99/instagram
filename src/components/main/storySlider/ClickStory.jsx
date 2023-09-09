@@ -12,6 +12,7 @@ function ClickStory({ story, setStory, setViewStory, data }) {
 
             return () => clearTimeout(timer);
         }
+        nextStory?rightStory():setViewStory(false)
     }, [time, story]);
     const nextStory = data.find(item => item.id == story?.id + 1);
     const previosStory = data.find(item => item.id == story?.id - 1);

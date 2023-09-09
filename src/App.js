@@ -1,12 +1,23 @@
+import { useEffect, useState } from "react";
 import Rout from "./Rout";
-import Nav from "./components/nav/Nav";
+import { PostContext } from "./components/context/Context";
 
 function App() {
-
+const [postDatas,setPostDatas] =useState([])
+useEffect(()=>{
+  fetch("https://instagram-9a517-default-rtdb.firebaseio.com/post.json")
+  .then(res=>res.json())
+  .then(data=>setPostDatas(...postDatas,Object.values(data)))
+},[])
+const datas={
+  postDatas,
+  setPostDatas
+}
+console.log(postDatas);
   return (
-    <div>
+    <PostContext.Provider value={datas}>
       <Rout/>
-    </div>
+    </PostContext.Provider>
 
   );
 }

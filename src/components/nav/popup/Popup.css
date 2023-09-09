@@ -10,11 +10,13 @@
     position: absolute;
     z-index: 10;
     top: 15%;
-    left: 33%;
-    width: 30%;
+    left: 30%;
     height: 70%;
     background-color: white;
     border-radius: 20px;
+    overflow: hidden;
+    transition: 1s;
+    width: 35%;
 }
 
 .createPost h3 {
@@ -22,6 +24,7 @@
     border-bottom: 1px solid rgb(217, 217, 217);
     padding: 10px;
     font-weight: 500;
+    height: 10%;
 }
 
 .close {
@@ -46,12 +49,57 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    width: 100%;
 }
 .selectPost button{
     color: white;
-    background-color: #0677FF;
+    background-color: #0095FF;
     border: 0;
     padding: 7px;
     border-radius: 7px;
     width: 40%;
+    cursor: pointer;
+    font-weight: 500;
+}
+.selectPost button:hover{
+    background-color: #0677FF;
+
+}
+.selectPost input{
+    display: none;
+}
+.crop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(217, 217, 217);
+    padding: 10px;
+    font-weight: 500;
+}
+.crop .leftIcon, .crop .next,.crop .sharePost{
+    cursor: pointer;
+}
+.crop .leftIcon{
+    font-weight: 800;
+}
+.crop .next,.crop .sharePost{
+    color: #0095FF;
+}
+.share{
+    display: flex;
+    height: 90%;
+    transition: 1s;
+}
+.share .comment{
+    transition: 1s;
+    width: 80%;
+}
+
+
+.share .comment textarea{
+    resize: none;
+    width: 100%;
+    outline: none;
+    border: 0;
+    padding: 10px;
 }

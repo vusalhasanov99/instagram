@@ -1,11 +1,9 @@
-import React, { useContext, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import './Popup.css'
 import { IoMdClose } from 'react-icons/io'
 import { BsArrowLeft } from 'react-icons/bs';
-import { PostContext } from '../../context/Context';
 
 function Popup({ setPopupShow }) {
-    const { postDatas, setPostDatas } = useContext(PostContext)
     const [base64Image, setBase64Image] = useState('');
     const [postWith, setPostWith] = useState(false);
     const inputRef = useRef()

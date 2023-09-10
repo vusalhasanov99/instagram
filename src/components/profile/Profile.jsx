@@ -1,9 +1,76 @@
 import React from 'react'
-import './Profile.css'
+import "./Profile.css"
+import vusal from '../../images/vusal.jpg'
 function Profile() {
   return (
-    <div className='profile'>
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas id vel totam aperiam quod deserunt in voluptates reiciendis iure? Autem et fuga beatae vel dolorum veniam at, eum maxime corrupti.
+    <div className='profil'>
+      <div className="profilContainer">
+        <div className="profilItem">
+          <div className="profilLeft">
+            <div className="profileimg"><img src={vusal} /></div>
+            <div className="profiletextAll">
+              <div><p>vusal_hasanov09</p></div>
+              <div style={{ fontSize: "13px", color: "#676464" }}>Vusal Hasanov</div>
+            </div>
+          </div>
+          <div className="profilRight">Switch</div>
+        </div>
+        <div className="texttext">
+          <div style={{ fontSize: "14px", fontWeight: "500", color: "#676464" }}>Suggested for you</div>
+          <div style={{ fontSize: "12px", fontWeight: "500" }}>See All</div>
+        </div>
+        <div className="profilItem">
+          <div className="profilLeft">
+            <div className="profileimg"><img src="https://i.pinimg.com/236x/d4/8c/3e/d48c3ea557f732be6e84d179dd69c991.jpg" /></div>
+            <div className="profiletextAll">
+              <div><p>ariana.prvt_18</p></div>
+              <div style={{ fontSize: "13px", color: "#676464" }}>Suggested for you</div>
+            </div>
+          </div>
+          <div className="profilRight">Follow</div>
+        </div>
+        <div className="profilItem">
+          <div className="profilLeft">
+            <div className="profileimg"><img src="https://i.pinimg.com/236x/a8/49/2b/a8492bf7334789b5e2f0344ca8463cef.jpg" /></div>
+            <div className="profiletextAll">
+              <div><p>mentor_villa</p></div>
+              <div style={{ fontSize: "13px", color: "#676464" }}>Suggested for you</div>
+            </div>
+          </div>
+          <div className="profilRight">Follow</div>
+        </div>
+        <div className="profilItem">
+          <div className="profilLeft">
+            <div className="profileimg"><img src="https://i.pinimg.com/236x/51/66/f0/5166f050efb0e29fee060dca294f619e.jpg" /></div>
+            <div className="profiletextAll">
+              <div><p>animals_home</p></div>
+              <div style={{ fontSize: "13px", color: "#676464" }}>Suggested for you</div>
+            </div>
+          </div>
+          <div className="profilRight">Follow</div>
+        </div>
+        <div className="profilItem">
+          <div className="profilLeft">
+            <div className="profileimg"><img src="https://i.pinimg.com/236x/2a/00/86/2a0086e355d8198c69f06fb72ad032d3.jpg" /></div>
+            <div className="profiletextAll">
+              <div><p>Webkit</p></div>
+              <div style={{ fontSize: "13px", color: "#676464" }}>Suggested for you</div>
+            </div>
+          </div>
+          <div className="profilRight">Follow</div>
+        </div>
+        <div className="profilItem">
+          <div className="profilLeft">
+            <div className="profileimg"><img src="https://i.pinimg.com/236x/38/ba/35/38ba35c985363afa088c96b82a6d5f2a.jpg" /></div>
+            <div className="profiletextAll">
+              <div><p>andiran_pric </p></div>
+              <div style={{ fontSize: "13px", color: "#676464" }}>Suggested for you</div>
+            </div>
+          </div>
+          <div className="profilRight">Follow</div>
+        </div>
+
+      </div>
     </div>
   )
 }

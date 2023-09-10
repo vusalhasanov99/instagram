@@ -1,5 +1,5 @@
 .storySlider {
-    width: 81%;
+    width: 83%;
     margin: auto;
     padding: 60px 40px;
     position: relative;
@@ -69,6 +69,9 @@
     height: 100%;
     display: grid;
     place-items: center;
+    >img{
+        max-width: 400px;
+    }
 }
 
 .clickStory .storyAbout {

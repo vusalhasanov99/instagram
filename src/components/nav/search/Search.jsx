@@ -2,7 +2,7 @@ import React from 'react'
 import './Search.css'
 function Search({ show }) {
     return (
-        <div className='search' style={{ transform: show ? "translate(0)" : "translate(-60%)" }}>
+        <div className='search' style={{ transform: show ? "translate(16px)" : "translate(-200px)" }}>
             <div className="searchTop">
                 <h2>Search</h2>
                 <div><input type="search" placeholder='Search' /></div>
